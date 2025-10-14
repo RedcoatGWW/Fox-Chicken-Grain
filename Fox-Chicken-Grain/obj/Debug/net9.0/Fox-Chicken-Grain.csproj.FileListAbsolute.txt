@@ -1,0 +1,14 @@
+/Users/cameronb/RiderProjects/Fox-Chicken-Grain/Fox-Chicken-Grain/bin/Debug/net9.0/Fox-Chicken-Grain
+/Users/cameronb/RiderProjects/Fox-Chicken-Grain/Fox-Chicken-Grain/bin/Debug/net9.0/Fox-Chicken-Grain.deps.json
+/Users/cameronb/RiderProjects/Fox-Chicken-Grain/Fox-Chicken-Grain/bin/Debug/net9.0/Fox-Chicken-Grain.runtimeconfig.json
+/Users/cameronb/RiderProjects/Fox-Chicken-Grain/Fox-Chicken-Grain/bin/Debug/net9.0/Fox-Chicken-Grain.dll
+/Users/cameronb/RiderProjects/Fox-Chicken-Grain/Fox-Chicken-Grain/bin/Debug/net9.0/Fox-Chicken-Grain.pdb
+/Users/cameronb/RiderProjects/Fox-Chicken-Grain/Fox-Chicken-Grain/obj/Debug/net9.0/Fox-Chicken-Grain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/cameronb/RiderProjects/Fox-Chicken-Grain/Fox-Chicken-Grain/obj/Debug/net9.0/Fox-Chicken-Grain.AssemblyInfoInputs.cache
+/Users/cameronb/RiderProjects/Fox-Chicken-Grain/Fox-Chicken-Grain/obj/Debug/net9.0/Fox-Chicken-Grain.AssemblyInfo.cs
+/Users/cameronb/RiderProjects/Fox-Chicken-Grain/Fox-Chicken-Grain/obj/Debug/net9.0/Fox-Chicken-Grain.csproj.CoreCompileInputs.cache
+/Users/cameronb/RiderProjects/Fox-Chicken-Grain/Fox-Chicken-Grain/obj/Debug/net9.0/Fox-Chicken-Grain.dll
+/Users/cameronb/RiderProjects/Fox-Chicken-Grain/Fox-Chicken-Grain/obj/Debug/net9.0/refint/Fox-Chicken-Grain.dll
+/Users/cameronb/RiderProjects/Fox-Chicken-Grain/Fox-Chicken-Grain/obj/Debug/net9.0/Fox-Chicken-Grain.pdb
+/Users/cameronb/RiderProjects/Fox-Chicken-Grain/Fox-Chicken-Grain/obj/Debug/net9.0/Fox-Chicken-Grain.genruntimeconfig.cache
+/Users/cameronb/RiderProjects/Fox-Chicken-Grain/Fox-Chicken-Grain/obj/Debug/net9.0/ref/Fox-Chicken-Grain.dll
