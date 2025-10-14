@@ -59,7 +59,7 @@ public class Element
 
             if (current == null)
             {
-                Console.WriteLine("List is empty");
+                Console.WriteLine("Nothing");
                 return;
             }
 
@@ -67,7 +67,7 @@ public class Element
             {
                 Console.Write(current.Data);
                 if (current.Next != null)
-                    Console.Write(" -> ");
+                    Console.Write(" - ");
                 current = current.Next;
             }
 
@@ -116,10 +116,7 @@ public class Element
         }
     }
 
-    public void DisplayBanks()
-    {
-        
-    }
+    
     
 
     

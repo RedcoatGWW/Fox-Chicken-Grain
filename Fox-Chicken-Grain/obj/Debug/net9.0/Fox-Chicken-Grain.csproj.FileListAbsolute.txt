@@ -12,3 +12,4 @@
 /Users/cameronb/RiderProjects/Fox-Chicken-Grain/Fox-Chicken-Grain/obj/Debug/net9.0/Fox-Chicken-Grain.pdb
 /Users/cameronb/RiderProjects/Fox-Chicken-Grain/Fox-Chicken-Grain/obj/Debug/net9.0/Fox-Chicken-Grain.genruntimeconfig.cache
 /Users/cameronb/RiderProjects/Fox-Chicken-Grain/Fox-Chicken-Grain/obj/Debug/net9.0/ref/Fox-Chicken-Grain.dll
+/Users/cameronb/RiderProjects/Fox-Chicken-Grain/Fox-Chicken-Grain/obj/Debug/net9.0/Fox-Chicken-Grain.sourcelink.json

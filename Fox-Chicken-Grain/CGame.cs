@@ -34,6 +34,20 @@ public class CGame
         _southItems.Add(Item.Chicken);
         _southItems.Add(Item.Grain);
     }
+    public void DisplayBanks()
+    {
+        Console.WriteLine("North Bank");
+        _northItems.PrintList();
+        
+        Console.WriteLine();
+        Console.WriteLine("South Bank");
+        _southItems.PrintList();
+
+        Console.WriteLine();
+        Console.WriteLine($"Farmer is on the {_farmerLocation} bank.");
+        
+
+    }
     
 
     
