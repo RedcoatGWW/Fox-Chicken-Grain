@@ -65,19 +65,19 @@ public class CGame
     
         //If northItems contains 3 items + farmer
         // return 'You have won'
-        public bool isWon()
-        {
-            int count = 0;
-            Element.LinkedList? current = _northItems;
-
-            while (current != null)
-            {
-                count++;
-                current = current.next;
-            }
-
-            return count == 3;
-        }
+        // public bool isWon()
+        // {
+        //     int count = 0;
+        //     Element.LinkedList? current = _northItems;
+        //
+        //     while (current != null)
+        //     {
+        //         count++;
+        //         current = current.next;
+        //     }
+        //
+        //     return count == 3;
+        // }
 
 }
 
