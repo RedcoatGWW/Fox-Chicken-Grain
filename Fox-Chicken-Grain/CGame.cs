@@ -9,7 +9,6 @@ public class CGame
         Chicken,
         Grain
     }
-
     public enum RiverBank
     {
         North,
@@ -18,9 +17,9 @@ public class CGame
 
     //unsure why i have to link directly when they are running in the same solution.
     //Added private data so the values remain static
-    private Element.LinkedList _northItems;
-
-    private Element.LinkedList _southItems;
+    private Element.LinkedList _north;
+    private Element.LinkedList _south;
+    private Element.LinkedList _farmerHold;
 
     //setting the starter location of the farmer
     private RiverBank _farmerLocation;
@@ -28,30 +27,31 @@ public class CGame
     public CGame()
     {
         //Constructors for the new linked lists for the bank sides to store items
-        _northItems = new Element.LinkedList();
-        _southItems = new Element.LinkedList();
+        _north = new Element.LinkedList();
+        _south = new Element.LinkedList();
+        _farmerHold = new Element.LinkedList();
         _farmerLocation = RiverBank.South;
 
         //Setting the starting location of the items
-        _southItems.Add(Item.Fox);
-        _southItems.Add(Item.Chicken);
-        _southItems.Add(Item.Grain);
+        _south.Add(Item.Fox);
+        _south.Add(Item.Chicken);
+        _south.Add(Item.Grain);
     }
 
     //Method to display the lists for the main game
     public void DisplayBanks()
     {
         Console.WriteLine("North Bank");
-        _northItems.PrintList();
+        _north.PrintList();
+
+        Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~");
 
         Console.WriteLine();
-        Console.WriteLine("South Bank");
-        _southItems.PrintList();
+        Console.WriteLine($"South Bank");
+        _south.PrintList();
 
         Console.WriteLine();
         Console.WriteLine($"Farmer is on the {_farmerLocation} bank.");
-
-
     }
 
     //Displays the introduction and instructions for the game

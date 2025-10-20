@@ -59,7 +59,7 @@ public class Element
 
             if (current == null)
             {
-                Console.WriteLine("Nothing");
+                Console.WriteLine();
                 return;
             }
 

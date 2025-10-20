@@ -15,10 +15,34 @@ class Program
         //Displays the game
         game.DisplayBanks();
         
+    
+
+
+//=============Moving from south bank=============
+    bool GameOver = true;
+    while (GameOver)
+    {
+        String Choice = Console.ReadLine();
+        Console.WriteLine("What would you like to move?");
+        
+    }
+//=============Moving fromm north bank=============
+
+//=============Win condition=======================
+
+//=============Loss condition=====================
+
+
+
+
     }
 }
 
+
+
+
 //testing calling the items
+
 // CGame.Item item1 = CGame.Item.Fox;
 // CGame.Item item2 = CGame.Item.Chicken; 
 // CGame.Item item3 = CGame.Item.Grain;
