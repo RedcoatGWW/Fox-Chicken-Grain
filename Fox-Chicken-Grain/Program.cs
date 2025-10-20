@@ -22,10 +22,16 @@ class Program
     bool GameOver = true;
     while (GameOver)
     {
-        String Choice = Console.ReadLine();
+        String choice = Console.ReadLine();
         Console.WriteLine("What would you like to move?");
+        if (choice == "Chicken");
         
+        else if (choice == "Fox") ;
+        
+        else if (choice == "Grain") ;
+
     }
+    
 //=============Moving fromm north bank=============
 
 //=============Win condition=======================

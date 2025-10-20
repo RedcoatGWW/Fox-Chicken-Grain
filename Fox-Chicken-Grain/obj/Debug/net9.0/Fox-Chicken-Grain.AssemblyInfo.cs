@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Fox-Chicken-Grain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1bcc499446f071605b36ff662246cacb4e5b4463")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9ba66438d1794d63138dfd3b26cf5c27ad80d39e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Fox-Chicken-Grain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Fox-Chicken-Grain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
