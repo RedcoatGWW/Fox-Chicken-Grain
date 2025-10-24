@@ -17,12 +17,12 @@ public class CGame
 
     //unsure why i have to link directly when they are running in the same solution.
     //Added private data so the values remain static
-    private Element.LinkedList _north;
-    private Element.LinkedList _south;
-    private Element.LinkedList _farmerHold;
+    public Element.LinkedList _north;
+    public Element.LinkedList _south;
+    public Element.LinkedList _farmerHold;
 
     //setting the starter location of the farmer
-    private RiverBank _farmerLocation;
+    public RiverBank _farmerLocation;
 
     public CGame()
     {
@@ -65,19 +65,12 @@ public class CGame
     
         //If northItems contains 3 items + farmer
         // return 'You have won'
-        // public bool isWon()
-        // {
-        //     int count = 0;
-        //     Element.LinkedList? current = _northItems;
-        //
-        //     while (current != null)
-        //     {
-        //         count++;
-        //         current = current.next;
-        //     }
-        //
-        //     return count == 3;
-        // }
+        public bool isWon()
+        {
+            if (_north.Contains(Item.Fox) && (_north.Contains(Item.Chicken) && (_north.Contains(Item.Grain))));
+            return true;
+            
+        }
 
 }
 

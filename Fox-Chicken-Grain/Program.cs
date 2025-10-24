@@ -18,26 +18,62 @@ class Program
     
 
 
-//=============Moving from south bank=============
+
     bool GameOver = true;
-    while (GameOver)
+    while (GameOver!)
     {
-        String choice = Console.ReadLine();
+        string choice = Console.ReadLine();
+        string choice2 = Console.ReadLine();
+            
+//=============Moving from south bank============= 
+        Console.WriteLine("What side would you like to move from?");
+        
+        if (choice2 == "South") ;
+        
         Console.WriteLine("What would you like to move?");
-        if (choice == "Chicken");
-        
-        else if (choice == "Fox") ;
-        
-        else if (choice == "Grain") ;
+            if (choice2 == "Chicken");
+            _farmerHold.Add(CGame.Item.Chicken);
+                //pop chicken from south list
+                //add to farmer held inventory
+            else if (choice2 == "Fox") ;
+            _farmerHold.Add(CGame.Item.Fox);
+                //pop Fox from south list
+                //add to farmer held inventory
+            else if (choice2 == "Grain") ;
+            ._farmerHold(CGame.Item.Grain);
+                //pop Grain from south list
+                //add to farmer held inventory
+            else ;
+            Console.WriteLine("Bad input");
+            
+            
+ //=============Moving fromm north bank=============    
+        if (choice2 == "North") ;   
+
+        Console.WriteLine("What would you like to move?");
+            if (choice2 == "Chicken");
+                //pop chicken from north list
+                //add to farmer held inventory
+            else if (choice2 == "Fox") ;
+                //pop Fox from north list
+                //add to farmer held inventory
+            else if (choice2 == "Grain") ;
+                //pop Grain from north list
+                //add to farmer held inventory
+            else ;
+            Console.WriteLine("Bad input");
 
     }
     
-//=============Moving fromm north bank=============
+
 
 //=============Win condition=======================
+//if north bank continues fox, chicken, grain and farmer = true
+//print you win!
 
 //=============Loss condition=====================
-
+//if either bank contains fox + chicken or chicken + grain with no farmer
+//print outcome (who eats who) and you lose
 
 
 

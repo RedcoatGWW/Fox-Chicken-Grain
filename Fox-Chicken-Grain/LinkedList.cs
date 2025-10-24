@@ -74,7 +74,7 @@ public class Element
             Console.WriteLine();
         }
 
-        public bool HasValue(CGame.Item value)
+        public bool Contains(CGame.Item value)
         {
             Element? current = _head;
             while (current != null)
