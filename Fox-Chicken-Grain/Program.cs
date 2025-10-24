@@ -32,17 +32,22 @@ class Program
         
         Console.WriteLine("What would you like to move?");
             if (choice2 == "Chicken");
+            _south.pop(CGame.Item.Chicken);
             _farmerHold.Add(CGame.Item.Chicken);
                 //pop chicken from south list
                 //add to farmer held inventory
             else if (choice2 == "Fox") ;
-            _farmerHold.Add(CGame.Item.Fox);
+            {
+                _farmerHold.Add(CGame.Item.Fox);
                 //pop Fox from south list
                 //add to farmer held inventory
+            }
             else if (choice2 == "Grain") ;
-            ._farmerHold(CGame.Item.Grain);
+            {
+                _farmerHold(CGame.Item.Grain);
                 //pop Grain from south list
                 //add to farmer held inventory
+            }
             else ;
             Console.WriteLine("Bad input");
             
