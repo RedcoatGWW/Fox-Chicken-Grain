@@ -2,10 +2,10 @@ namespace Fox_Chicken_Grain;
 
 public class Element
 {
-    
+
     private CGame.Item _data;
     private Element? _next;
-    
+
     public Element(CGame.Item data)
     {
         _data = data;
@@ -27,14 +27,14 @@ public class Element
     public class LinkedList
     {
         private Element? _head;
-        
+
         public LinkedList()
         {
             _head = null;
         }
 
         public void Add(CGame.Item item)
-        {   
+        {
             //Adds a new item to the head of the stack
             Element newElement = new Element(item);
             newElement.Next = _head;
@@ -50,6 +50,31 @@ public class Element
             else
             {
                 Console.WriteLine("List is empty");
+            }
+        }
+
+        public void RemoveFirst(CGame.Item data)
+        {
+            if (_head == null)
+            {
+                return;
+            }
+
+            if (_head.Data.Equals(data))
+            {
+                _head = _head.Next;
+                return;
+            }
+
+            Element? current = _head;
+            while (current.Next != null)
+            {
+                if (current.Next.Data.Equals(data))
+                {
+                    current.Next = current.Next.Next;
+                    return;
+                }
+                current = current.Next;
             }
         }
 
@@ -116,8 +141,8 @@ public class Element
         }
     }
 
-    
-    
 
-    
+
+
+
 }

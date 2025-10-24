@@ -4,7 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-       
+
         //Creates the new game instance
         CGame game = new CGame();
         //Displays the introduction and explains what the player needs to do (need to thin out the text)
@@ -12,78 +12,115 @@ class Program
         //Waits for the player to press a button to start the game and clears the screen
         Console.ReadKey();
         Console.Clear();
-        //Displays the game
-        game.DisplayBanks();
-        
-    
+       
 
 
 
-    bool GameOver = true;
-    while (GameOver!)
-    {
-        string choice = Console.ReadLine();
-        string choice2 = Console.ReadLine();
-            
-//=============Moving from south bank============= 
-        Console.WriteLine("What side would you like to move from?");
-        
-        if (choice2 == "South") ;
-        
-        Console.WriteLine("What would you like to move?");
-            if (choice2 == "Chicken");
-            _south.pop(CGame.Item.Chicken);
-            _farmerHold.Add(CGame.Item.Chicken);
-                //pop chicken from south list
-                //add to farmer held inventory
-            else if (choice2 == "Fox") ;
+        bool GameOver = false;
+        while (!game.isWon() && !game.isLost())
+        {
+            //Displays the game
+            game.DisplayBanks();
+
+            //=============Moving from south bank============= 
+            Console.WriteLine("What side would you like to move from?");
+            Console.WriteLine("North or South?");
+            string choice = Console.ReadLine();
+
+            if (choice == "South")
             {
-                _farmerHold.Add(CGame.Item.Fox);
-                //pop Fox from south list
-                //add to farmer held inventory
+                Console.Clear();
+                Console.WriteLine("What would you like to move?");
+
+                string choice2 = Console.ReadLine();
+                if (choice2 == "Chicken")
+                {
+                    game._south.RemoveFirst(CGame.Item.Chicken);
+                    game._south.RemoveFirst(CGame.Item.Farmer);
+                    game._north.Add(CGame.Item.Chicken);
+                    game._north.Add(CGame.Item.Farmer);
+                    Console.Clear();
+                }
+
+                else if (choice2 == "Fox")
+                {
+                    game._south.RemoveFirst(CGame.Item.Fox);
+                    game._south.RemoveFirst(CGame.Item.Farmer);
+                    game._north.Add(CGame.Item.Fox);
+                    game._north.Add(CGame.Item.Farmer);
+                    Console.Clear();
+                }
+
+                else if (choice2 == "Grain")
+                {
+                    game._south.RemoveFirst(CGame.Item.Grain);
+                    game._south.RemoveFirst(CGame.Item.Farmer);
+                    game._north.Add(CGame.Item.Grain);
+                    game._north.Add(CGame.Item.Farmer);
+                    Console.Clear();
+                }
+                else if (choice2 == "Farmer")
+                {
+                    game._south.RemoveFirst(CGame.Item.Farmer);
+                    game._north.Add(CGame.Item.Farmer);
+                    Console.Clear();
+                }
+
+                else
+                {
+                    Console.WriteLine("Bad input");
+                }
             }
-            else if (choice2 == "Grain") ;
-            {
-                _farmerHold(CGame.Item.Grain);
-                //pop Grain from south list
-                //add to farmer held inventory
+
+                //=============Moving fromm north bank=============    
+            if (choice == "North")
+                {
+                Console.Clear();
+                Console.WriteLine("What would you like to move?");
+                string choice3 = Console.ReadLine();
+
+                if (choice3 == "Chicken")
+                {
+                    game._north.RemoveFirst(CGame.Item.Chicken);
+                    game._north.RemoveFirst(CGame.Item.Farmer);
+                    game._south.Add(CGame.Item.Chicken);
+                    game._south.Add(CGame.Item.Farmer);
+                    Console.Clear();
+                }
+
+                else if (choice3 == "Fox")
+                {
+                    game._north.RemoveFirst(CGame.Item.Fox);
+                    game._north.RemoveFirst(CGame.Item.Farmer);
+                    game._south.Add(CGame.Item.Fox);
+                    game._south.Add(CGame.Item.Farmer);
+                    Console.Clear();
+                }
+
+                else if (choice3 == "Grain")
+                {
+                    game._north.RemoveFirst(CGame.Item.Grain);
+                    game._north.RemoveFirst(CGame.Item.Farmer);
+                    game._south.Add(CGame.Item.Grain);
+                    game._south.Add(CGame.Item.Farmer);
+                    Console.Clear();
+                }
+                else if (choice3 == "Farmer")
+                {
+                    game._north.RemoveFirst(CGame.Item.Farmer);
+                    game._south.Add(CGame.Item.Farmer);
+                    Console.Clear();
+                }
+
+                else
+                {
+                    Console.WriteLine("Bad input");
+                }
+                }
             }
-            else ;
-            Console.WriteLine("Bad input");
-            
-            
- //=============Moving fromm north bank=============    
-        if (choice2 == "North") ;   
-
-        Console.WriteLine("What would you like to move?");
-            if (choice2 == "Chicken");
-                //pop chicken from north list
-                //add to farmer held inventory
-            else if (choice2 == "Fox") ;
-                //pop Fox from north list
-                //add to farmer held inventory
-            else if (choice2 == "Grain") ;
-                //pop Grain from north list
-                //add to farmer held inventory
-            else ;
-            Console.WriteLine("Bad input");
-
+        }
     }
-    
 
-
-//=============Win condition=======================
-//if north bank continues fox, chicken, grain and farmer = true
-//print you win!
-
-//=============Loss condition=====================
-//if either bank contains fox + chicken or chicken + grain with no farmer
-//print outcome (who eats who) and you lose
-
-
-
-    }
-}
 
 
 
